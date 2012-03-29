@@ -9,7 +9,7 @@ class Model {
 	
 	static belongsTo = Tenant
 	
-//	static hasMany = [relationRules:RelationRule, partTypes:PartType]
+	static hasMany = [relationRules:RelationRule, partTypes:PartType]
 	
     static constraints = {
 		name(nullable:false)
