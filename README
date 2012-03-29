@@ -1,0 +1,10 @@
+O projeto NNCORE representa o motor de configuração, design e execução de tenants NANUVEM.
+
+Esse componente persiste seus dados em um banco de dados MySQL, usando GORM.
+Os consumidores desse componente são aplicativos web (desktop e mobile) e aplicativos standalone, utilizando uma interface RESTful com JSON.
+
+Este projeto possui três componentes principais:
+
+* Config - configuração inicial dos tenants (parâmetros, recursos, papeis, usuários). Esse componente será utilizado pelos diretores, deployers e consultores de venda.
+* Design - projeto das entidades, relacionamentos, tipos de atributos, atributos e métodos de cada tenant. Esse componente será utilizado pelos customizadores.
+* Runtime - Ambiente de execução dos tenants, conforme o que foi definido pelo design. Esse componente será utilizado pelos end users.
